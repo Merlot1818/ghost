@@ -1,0 +1,43 @@
+{
+  "name": "ghost",
+  "version": "1.0.0",
+  "description": "Front-end development engineering",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint src/",
+    "bundle": "./node_modules/.bin/rollup -c rollup.config.js",
+    "bundle-demo": "./node_modules/.bin/rollup -c rollup.config.demo.js",
+    "start": "./node_modules/.bin/hs ./docs -p 8888 -s -c-1 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merlot1818/ghost.git"
+  },
+  "author": "梅洛Merlot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merlot1818/ghost/issues"
+  },
+  "homepage": "https://github.com/Merlot1818/ghost#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "http-server": "^0.11.1",
+    "postcss-simple-vars": "^4.1.0",
+    "rollup": "^0.63.5",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-postcss": "^1.6.3",
+    "rollup-plugin-uglify": "^4.0.0"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.0.0"
+  }
+}
