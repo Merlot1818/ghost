@@ -25,4 +25,4 @@ class B extends A {
   }
 }
 
-export { A, B, version };
+export { version, A, B };
